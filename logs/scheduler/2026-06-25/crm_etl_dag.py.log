@@ -429,3 +429,87 @@
 [2026-06-25T01:48:01.907+0000] {logging_mixin.py:188} INFO - [2026-06-25T01:48:01.907+0000] {dag.py:3096} INFO - Sync 1 DAGs
 [2026-06-25T01:48:01.930+0000] {logging_mixin.py:188} INFO - [2026-06-25T01:48:01.930+0000] {dag.py:3954} INFO - Setting next_dagrun for crm_etl_pipeline to 2026-06-24 06:00:00+00:00, run_after=2026-06-25 06:00:00+00:00
 [2026-06-25T01:48:01.952+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/crm_etl_dag.py took 0.110 seconds
+[2026-06-25T01:48:32.057+0000] {processor.py:161} INFO - Started process (PID=591) to work on /opt/airflow/dags/crm_etl_dag.py
+[2026-06-25T01:48:32.058+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/crm_etl_dag.py for tasks to queue
+[2026-06-25T01:48:32.060+0000] {logging_mixin.py:188} INFO - [2026-06-25T01:48:32.060+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/crm_etl_dag.py
+[2026-06-25T01:48:32.080+0000] {processor.py:840} INFO - DAG(s) 'crm_etl_pipeline' retrieved from /opt/airflow/dags/crm_etl_dag.py
+[2026-06-25T01:48:32.109+0000] {logging_mixin.py:188} INFO - [2026-06-25T01:48:32.109+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-06-25T01:48:32.126+0000] {logging_mixin.py:188} INFO - [2026-06-25T01:48:32.126+0000] {dag.py:3954} INFO - Setting next_dagrun for crm_etl_pipeline to 2026-06-24 06:00:00+00:00, run_after=2026-06-25 06:00:00+00:00
+[2026-06-25T01:48:32.146+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/crm_etl_dag.py took 0.094 seconds
+[2026-06-25T01:49:02.285+0000] {processor.py:161} INFO - Started process (PID=596) to work on /opt/airflow/dags/crm_etl_dag.py
+[2026-06-25T01:49:02.287+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/crm_etl_dag.py for tasks to queue
+[2026-06-25T01:49:02.289+0000] {logging_mixin.py:188} INFO - [2026-06-25T01:49:02.289+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/crm_etl_dag.py
+[2026-06-25T01:49:02.312+0000] {processor.py:840} INFO - DAG(s) 'crm_etl_pipeline' retrieved from /opt/airflow/dags/crm_etl_dag.py
+[2026-06-25T01:49:02.341+0000] {logging_mixin.py:188} INFO - [2026-06-25T01:49:02.341+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-06-25T01:49:02.362+0000] {logging_mixin.py:188} INFO - [2026-06-25T01:49:02.362+0000] {dag.py:3954} INFO - Setting next_dagrun for crm_etl_pipeline to 2026-06-24 06:00:00+00:00, run_after=2026-06-25 06:00:00+00:00
+[2026-06-25T01:49:02.379+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/crm_etl_dag.py took 0.098 seconds
+[2026-06-25T01:49:32.525+0000] {processor.py:161} INFO - Started process (PID=601) to work on /opt/airflow/dags/crm_etl_dag.py
+[2026-06-25T01:49:32.527+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/crm_etl_dag.py for tasks to queue
+[2026-06-25T01:49:32.530+0000] {logging_mixin.py:188} INFO - [2026-06-25T01:49:32.530+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/crm_etl_dag.py
+[2026-06-25T01:49:32.544+0000] {processor.py:840} INFO - DAG(s) 'crm_etl_pipeline' retrieved from /opt/airflow/dags/crm_etl_dag.py
+[2026-06-25T01:49:32.569+0000] {logging_mixin.py:188} INFO - [2026-06-25T01:49:32.569+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-06-25T01:49:32.600+0000] {logging_mixin.py:188} INFO - [2026-06-25T01:49:32.600+0000] {dag.py:3954} INFO - Setting next_dagrun for crm_etl_pipeline to 2026-06-24 06:00:00+00:00, run_after=2026-06-25 06:00:00+00:00
+[2026-06-25T01:49:32.624+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/crm_etl_dag.py took 0.104 seconds
+[2026-06-25T01:50:02.777+0000] {processor.py:161} INFO - Started process (PID=606) to work on /opt/airflow/dags/crm_etl_dag.py
+[2026-06-25T01:50:02.779+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/crm_etl_dag.py for tasks to queue
+[2026-06-25T01:50:02.781+0000] {logging_mixin.py:188} INFO - [2026-06-25T01:50:02.781+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/crm_etl_dag.py
+[2026-06-25T01:50:02.807+0000] {processor.py:840} INFO - DAG(s) 'crm_etl_pipeline' retrieved from /opt/airflow/dags/crm_etl_dag.py
+[2026-06-25T01:50:02.840+0000] {logging_mixin.py:188} INFO - [2026-06-25T01:50:02.840+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-06-25T01:50:02.862+0000] {logging_mixin.py:188} INFO - [2026-06-25T01:50:02.862+0000] {dag.py:3954} INFO - Setting next_dagrun for crm_etl_pipeline to 2026-06-24 06:00:00+00:00, run_after=2026-06-25 06:00:00+00:00
+[2026-06-25T01:50:02.883+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/crm_etl_dag.py took 0.111 seconds
+[2026-06-25T01:50:33.048+0000] {processor.py:161} INFO - Started process (PID=611) to work on /opt/airflow/dags/crm_etl_dag.py
+[2026-06-25T01:50:33.049+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/crm_etl_dag.py for tasks to queue
+[2026-06-25T01:50:33.051+0000] {logging_mixin.py:188} INFO - [2026-06-25T01:50:33.051+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/crm_etl_dag.py
+[2026-06-25T01:50:33.119+0000] {processor.py:840} INFO - DAG(s) 'crm_etl_pipeline' retrieved from /opt/airflow/dags/crm_etl_dag.py
+[2026-06-25T01:50:33.144+0000] {logging_mixin.py:188} INFO - [2026-06-25T01:50:33.144+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-06-25T01:50:33.161+0000] {logging_mixin.py:188} INFO - [2026-06-25T01:50:33.161+0000] {dag.py:3954} INFO - Setting next_dagrun for crm_etl_pipeline to 2026-06-24 06:00:00+00:00, run_after=2026-06-25 06:00:00+00:00
+[2026-06-25T01:50:33.182+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/crm_etl_dag.py took 0.139 seconds
+[2026-06-25T01:51:03.278+0000] {processor.py:161} INFO - Started process (PID=616) to work on /opt/airflow/dags/crm_etl_dag.py
+[2026-06-25T01:51:03.280+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/crm_etl_dag.py for tasks to queue
+[2026-06-25T01:51:03.282+0000] {logging_mixin.py:188} INFO - [2026-06-25T01:51:03.281+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/crm_etl_dag.py
+[2026-06-25T01:51:03.300+0000] {processor.py:840} INFO - DAG(s) 'crm_etl_pipeline' retrieved from /opt/airflow/dags/crm_etl_dag.py
+[2026-06-25T01:51:03.332+0000] {logging_mixin.py:188} INFO - [2026-06-25T01:51:03.332+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-06-25T01:51:03.359+0000] {logging_mixin.py:188} INFO - [2026-06-25T01:51:03.359+0000] {dag.py:3954} INFO - Setting next_dagrun for crm_etl_pipeline to 2026-06-24 06:00:00+00:00, run_after=2026-06-25 06:00:00+00:00
+[2026-06-25T01:51:03.381+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/crm_etl_dag.py took 0.112 seconds
+[2026-06-25T01:51:33.598+0000] {processor.py:161} INFO - Started process (PID=621) to work on /opt/airflow/dags/crm_etl_dag.py
+[2026-06-25T01:51:33.599+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/crm_etl_dag.py for tasks to queue
+[2026-06-25T01:51:33.601+0000] {logging_mixin.py:188} INFO - [2026-06-25T01:51:33.601+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/crm_etl_dag.py
+[2026-06-25T01:51:33.622+0000] {processor.py:840} INFO - DAG(s) 'crm_etl_pipeline' retrieved from /opt/airflow/dags/crm_etl_dag.py
+[2026-06-25T01:51:33.672+0000] {logging_mixin.py:188} INFO - [2026-06-25T01:51:33.672+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-06-25T01:51:33.690+0000] {logging_mixin.py:188} INFO - [2026-06-25T01:51:33.690+0000] {dag.py:3954} INFO - Setting next_dagrun for crm_etl_pipeline to 2026-06-24 06:00:00+00:00, run_after=2026-06-25 06:00:00+00:00
+[2026-06-25T01:51:33.711+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/crm_etl_dag.py took 0.118 seconds
+[2026-06-25T01:52:03.822+0000] {processor.py:161} INFO - Started process (PID=626) to work on /opt/airflow/dags/crm_etl_dag.py
+[2026-06-25T01:52:03.823+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/crm_etl_dag.py for tasks to queue
+[2026-06-25T01:52:03.825+0000] {logging_mixin.py:188} INFO - [2026-06-25T01:52:03.825+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/crm_etl_dag.py
+[2026-06-25T01:52:03.842+0000] {processor.py:840} INFO - DAG(s) 'crm_etl_pipeline' retrieved from /opt/airflow/dags/crm_etl_dag.py
+[2026-06-25T01:52:03.869+0000] {logging_mixin.py:188} INFO - [2026-06-25T01:52:03.869+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-06-25T01:52:03.888+0000] {logging_mixin.py:188} INFO - [2026-06-25T01:52:03.888+0000] {dag.py:3954} INFO - Setting next_dagrun for crm_etl_pipeline to 2026-06-24 06:00:00+00:00, run_after=2026-06-25 06:00:00+00:00
+[2026-06-25T01:52:03.908+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/crm_etl_dag.py took 0.091 seconds
+[2026-06-25T01:52:34.213+0000] {processor.py:161} INFO - Started process (PID=631) to work on /opt/airflow/dags/crm_etl_dag.py
+[2026-06-25T01:52:34.216+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/crm_etl_dag.py for tasks to queue
+[2026-06-25T01:52:34.218+0000] {logging_mixin.py:188} INFO - [2026-06-25T01:52:34.217+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/crm_etl_dag.py
+[2026-06-25T01:52:34.234+0000] {processor.py:840} INFO - DAG(s) 'crm_etl_pipeline' retrieved from /opt/airflow/dags/crm_etl_dag.py
+[2026-06-25T01:52:34.316+0000] {logging_mixin.py:188} INFO - [2026-06-25T01:52:34.316+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-06-25T01:52:34.356+0000] {logging_mixin.py:188} INFO - [2026-06-25T01:52:34.356+0000] {dag.py:3954} INFO - Setting next_dagrun for crm_etl_pipeline to 2026-06-24 06:00:00+00:00, run_after=2026-06-25 06:00:00+00:00
+[2026-06-25T01:52:34.378+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/crm_etl_dag.py took 0.170 seconds
+[2026-06-25T01:53:04.536+0000] {processor.py:161} INFO - Started process (PID=636) to work on /opt/airflow/dags/crm_etl_dag.py
+[2026-06-25T01:53:04.537+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/crm_etl_dag.py for tasks to queue
+[2026-06-25T01:53:04.539+0000] {logging_mixin.py:188} INFO - [2026-06-25T01:53:04.539+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/crm_etl_dag.py
+[2026-06-25T01:53:04.566+0000] {processor.py:840} INFO - DAG(s) 'crm_etl_pipeline' retrieved from /opt/airflow/dags/crm_etl_dag.py
+[2026-06-25T01:53:04.599+0000] {logging_mixin.py:188} INFO - [2026-06-25T01:53:04.599+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-06-25T01:53:04.617+0000] {logging_mixin.py:188} INFO - [2026-06-25T01:53:04.617+0000] {dag.py:3954} INFO - Setting next_dagrun for crm_etl_pipeline to 2026-06-24 06:00:00+00:00, run_after=2026-06-25 06:00:00+00:00
+[2026-06-25T01:53:04.650+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/crm_etl_dag.py took 0.118 seconds
+[2026-06-25T01:53:34.899+0000] {processor.py:161} INFO - Started process (PID=641) to work on /opt/airflow/dags/crm_etl_dag.py
+[2026-06-25T01:53:34.901+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/crm_etl_dag.py for tasks to queue
+[2026-06-25T01:53:34.903+0000] {logging_mixin.py:188} INFO - [2026-06-25T01:53:34.902+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/crm_etl_dag.py
+[2026-06-25T01:53:34.918+0000] {processor.py:840} INFO - DAG(s) 'crm_etl_pipeline' retrieved from /opt/airflow/dags/crm_etl_dag.py
+[2026-06-25T01:53:34.939+0000] {logging_mixin.py:188} INFO - [2026-06-25T01:53:34.939+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-06-25T01:53:34.955+0000] {logging_mixin.py:188} INFO - [2026-06-25T01:53:34.955+0000] {dag.py:3954} INFO - Setting next_dagrun for crm_etl_pipeline to 2026-06-24 06:00:00+00:00, run_after=2026-06-25 06:00:00+00:00
+[2026-06-25T01:53:34.972+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/crm_etl_dag.py took 0.095 seconds
+[2026-06-25T01:54:05.055+0000] {processor.py:161} INFO - Started process (PID=646) to work on /opt/airflow/dags/crm_etl_dag.py
+[2026-06-25T01:54:05.057+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/crm_etl_dag.py for tasks to queue
+[2026-06-25T01:54:05.059+0000] {logging_mixin.py:188} INFO - [2026-06-25T01:54:05.058+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/crm_etl_dag.py
+[2026-06-25T01:54:05.076+0000] {processor.py:840} INFO - DAG(s) 'crm_etl_pipeline' retrieved from /opt/airflow/dags/crm_etl_dag.py
+[2026-06-25T01:54:05.108+0000] {logging_mixin.py:188} INFO - [2026-06-25T01:54:05.108+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-06-25T01:54:05.130+0000] {logging_mixin.py:188} INFO - [2026-06-25T01:54:05.130+0000] {dag.py:3954} INFO - Setting next_dagrun for crm_etl_pipeline to 2026-06-24 06:00:00+00:00, run_after=2026-06-25 06:00:00+00:00
+[2026-06-25T01:54:05.154+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/crm_etl_dag.py took 0.104 seconds
