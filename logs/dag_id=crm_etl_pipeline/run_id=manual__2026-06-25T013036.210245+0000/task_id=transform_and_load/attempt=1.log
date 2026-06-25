@@ -1,0 +1,58 @@
+[2026-06-25T01:30:43.745+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2026-06-25T01:30:43.779+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: crm_etl_pipeline.transform_and_load manual__2026-06-25T01:30:36.210245+00:00 [queued]>
+[2026-06-25T01:30:43.788+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: crm_etl_pipeline.transform_and_load manual__2026-06-25T01:30:36.210245+00:00 [queued]>
+[2026-06-25T01:30:43.789+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 2
+[2026-06-25T01:30:43.802+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): transform_and_load> on 2026-06-25 01:30:36.210245+00:00
+[2026-06-25T01:30:43.842+0000] {standard_task_runner.py:90} INFO - Running: ['airflow', 'tasks', 'run', 'crm_etl_pipeline', 'transform_and_load', 'manual__2026-06-25T01:30:36.210245+00:00', '--job-id', '9', '--raw', '--subdir', 'DAGS_FOLDER/crm_etl_dag.py', '--cfg-path', '/tmp/tmpzb25saih']
+[2026-06-25T01:30:43.840+0000] {logging_mixin.py:188} WARNING - /home/airflow/.local/lib/python3.12/site-packages/airflow/task/task_runner/standard_task_runner.py:61 DeprecationWarning: This process (pid=367) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2026-06-25T01:30:43.846+0000] {standard_task_runner.py:91} INFO - Job 9: Subtask transform_and_load
+[2026-06-25T01:30:43.847+0000] {standard_task_runner.py:63} INFO - Started process 368 to run task
+[2026-06-25T01:30:43.899+0000] {task_command.py:426} INFO - Running <TaskInstance: crm_etl_pipeline.transform_and_load manual__2026-06-25T01:30:36.210245+00:00 [running]> on host 4215ccb3c8ea
+[2026-06-25T01:30:43.965+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='data_analyst' AIRFLOW_CTX_DAG_ID='crm_etl_pipeline' AIRFLOW_CTX_TASK_ID='transform_and_load' AIRFLOW_CTX_EXECUTION_DATE='2026-06-25T01:30:36.210245+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2026-06-25T01:30:36.210245+00:00'
+[2026-06-25T01:30:43.969+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2026-06-25T01:30:44.420+0000] {logging_mixin.py:188} INFO - [EXTRACT] Đọc file CSV...
+[2026-06-25T01:30:44.468+0000] {logging_mixin.py:188} INFO - [EXTRACT] ✅ Đọc xong — 9,994 dòng, 21 cột
+[2026-06-25T01:30:44.479+0000] {logging_mixin.py:188} INFO - 
+📋 Bắt đầu Data Quality Checks...
+[2026-06-25T01:30:44.480+0000] {logging_mixin.py:188} INFO - -------------------------------------------------------
+[2026-06-25T01:30:44.481+0000] {logging_mixin.py:188} INFO -   ✅ [PASS] null_check_order_id: Cột 'order_id' không được chứa NULL (0 lỗi)
+[2026-06-25T01:30:44.483+0000] {logging_mixin.py:188} INFO -   ✅ [PASS] null_check_customer_id: Cột 'customer_id' không được chứa NULL (0 lỗi)
+[2026-06-25T01:30:44.484+0000] {logging_mixin.py:188} INFO -   ✅ [PASS] null_check_product_id: Cột 'product_id' không được chứa NULL (0 lỗi)
+[2026-06-25T01:30:44.485+0000] {logging_mixin.py:188} INFO -   ✅ [PASS] null_check_order_date: Cột 'order_date' không được chứa NULL (0 lỗi)
+[2026-06-25T01:30:44.486+0000] {logging_mixin.py:188} INFO -   ✅ [PASS] sales_non_negative: Sales không được âm (0 lỗi)
+[2026-06-25T01:30:44.487+0000] {logging_mixin.py:188} INFO -   ✅ [PASS] quantity_positive: Quantity phải lớn hơn 0 (0 lỗi)
+[2026-06-25T01:30:44.488+0000] {logging_mixin.py:188} INFO -   ✅ [PASS] discount_range: Discount phải trong khoảng 0.0 – 1.0 (0 lỗi)
+[2026-06-25T01:30:44.633+0000] {logging_mixin.py:188} INFO -   ✅ [PASS] order_date_not_future: Order date không được là ngày trong tương lai (0 lỗi)
+[2026-06-25T01:30:44.647+0000] {logging_mixin.py:188} INFO -   ✅ [PASS] ship_after_order: Ship date phải >= Order date (0 lỗi)
+[2026-06-25T01:30:44.651+0000] {logging_mixin.py:188} INFO -   ❌ [FAIL] no_duplicate_order_product: Không được trùng cặp (order_id, product_id) (8 lỗi)
+[2026-06-25T01:30:44.653+0000] {logging_mixin.py:188} INFO -   ✅ [PASS] segment_valid_values: Segment phải là một trong: {'Home Office', 'Consumer', 'Corporate'} (0 lỗi)
+[2026-06-25T01:30:44.654+0000] {logging_mixin.py:188} INFO -   ✅ [PASS] discount_extreme_warning: Discount > 80% — kiểm tra lại dữ liệu (0 lỗi)
+[2026-06-25T01:30:44.656+0000] {logging_mixin.py:188} INFO - -------------------------------------------------------
+[2026-06-25T01:30:44.657+0000] {logging_mixin.py:188} INFO -   Kết quả: 11 PASS | 1 FAIL
+[2026-06-25T01:30:44.672+0000] {logging_mixin.py:188} INFO -   💾 Đã lưu kết quả vào bảng data_quality_log
+[2026-06-25T01:30:44.674+0000] {logging_mixin.py:188} INFO - 
+⚠️  1 check(s) FAIL — xem bảng data_quality_log trong DB
+[2026-06-25T01:30:44.675+0000] {logging_mixin.py:188} INFO - 
+⚠️  Vẫn tiếp tục ETL với dữ liệu đã lọc lỗi...
+[2026-06-25T01:30:44.676+0000] {logging_mixin.py:188} INFO - 
+[TRANSFORM] Làm sạch và chuẩn bị dữ liệu...
+[2026-06-25T01:30:44.681+0000] {logging_mixin.py:188} INFO - [TRANSFORM] Loại bỏ 8 duplicate rows
+[2026-06-25T01:30:44.689+0000] {logging_mixin.py:188} INFO - [TRANSFORM] Phát hiện 604 anomaly records (IQR method)
+[2026-06-25T01:30:44.729+0000] {logging_mixin.py:188} INFO - [TRANSFORM] ✅ Hoàn tất:
+[2026-06-25T01:30:44.731+0000] {logging_mixin.py:188} INFO -   dim_customers : 793 rows
+[2026-06-25T01:30:44.733+0000] {logging_mixin.py:188} INFO -   dim_products  : 1,862 rows
+[2026-06-25T01:30:44.749+0000] {logging_mixin.py:188} INFO -   dim_date      : 1,434 rows
+[2026-06-25T01:30:44.753+0000] {logging_mixin.py:188} INFO -   fact_orders   : 9,986 rows
+[2026-06-25T01:30:44.754+0000] {logging_mixin.py:188} INFO - 
+[LOAD] Nạp dữ liệu vào PostgreSQL...
+[2026-06-25T01:30:44.880+0000] {logging_mixin.py:188} INFO -   ✅ dim_customers: 793 rows
+[2026-06-25T01:30:44.958+0000] {logging_mixin.py:188} INFO -   ✅ dim_products: 1,862 rows
+[2026-06-25T01:30:45.036+0000] {logging_mixin.py:188} INFO -   ✅ dim_date: 1,434 rows
+[2026-06-25T01:30:46.028+0000] {logging_mixin.py:188} INFO -   ✅ fact_orders: 9,986 rows
+[2026-06-25T01:30:46.033+0000] {logging_mixin.py:188} INFO - [LOAD] ✅ Hoàn tất!
+[2026-06-25T01:30:46.035+0000] {python.py:237} INFO - Done. Returned value was: Transform & Load hoàn tất
+[2026-06-25T01:30:46.038+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2026-06-25T01:30:46.061+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=crm_etl_pipeline, task_id=transform_and_load, run_id=manual__2026-06-25T01:30:36.210245+00:00, execution_date=20260625T013036, start_date=20260625T013043, end_date=20260625T013046
+[2026-06-25T01:30:46.117+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2026-06-25T01:30:46.143+0000] {taskinstance.py:3498} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2026-06-25T01:30:46.145+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

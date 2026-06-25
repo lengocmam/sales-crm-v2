@@ -1,0 +1,15 @@
+FROM jupyter/scipy-notebook:python-3.11
+
+USER root
+
+RUN pip install --no-cache-dir \
+    psycopg2-binary \
+    sqlalchemy \
+    pandas \
+    numpy \
+    matplotlib \
+    seaborn \
+    openpyxl \
+    apache-airflow-client
+
+USER jovyan

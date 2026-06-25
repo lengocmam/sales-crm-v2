@@ -1,0 +1,41 @@
+[2026-06-25T01:22:26.274+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2026-06-25T01:22:26.304+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: crm_etl_pipeline.data_quality_check manual__2026-06-25T01:22:17.042739+00:00 [queued]>
+[2026-06-25T01:22:26.311+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: crm_etl_pipeline.data_quality_check manual__2026-06-25T01:22:17.042739+00:00 [queued]>
+[2026-06-25T01:22:26.313+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 2
+[2026-06-25T01:22:26.324+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): data_quality_check> on 2026-06-25 01:22:17.042739+00:00
+[2026-06-25T01:22:26.331+0000] {standard_task_runner.py:90} INFO - Running: ['airflow', 'tasks', 'run', 'crm_etl_pipeline', 'data_quality_check', 'manual__2026-06-25T01:22:17.042739+00:00', '--job-id', '3', '--raw', '--subdir', 'DAGS_FOLDER/crm_etl_dag.py', '--cfg-path', '/tmp/tmp4bl4bs3k']
+[2026-06-25T01:22:26.332+0000] {logging_mixin.py:188} WARNING - /home/airflow/.local/lib/python3.12/site-packages/airflow/task/task_runner/standard_task_runner.py:61 DeprecationWarning: This process (pid=229) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2026-06-25T01:22:26.334+0000] {standard_task_runner.py:91} INFO - Job 3: Subtask data_quality_check
+[2026-06-25T01:22:26.335+0000] {standard_task_runner.py:63} INFO - Started process 230 to run task
+[2026-06-25T01:22:26.396+0000] {task_command.py:426} INFO - Running <TaskInstance: crm_etl_pipeline.data_quality_check manual__2026-06-25T01:22:17.042739+00:00 [running]> on host 4215ccb3c8ea
+[2026-06-25T01:22:26.463+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='data_analyst' AIRFLOW_CTX_DAG_ID='crm_etl_pipeline' AIRFLOW_CTX_TASK_ID='data_quality_check' AIRFLOW_CTX_EXECUTION_DATE='2026-06-25T01:22:17.042739+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2026-06-25T01:22:17.042739+00:00'
+[2026-06-25T01:22:26.465+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2026-06-25T01:22:26.782+0000] {logging_mixin.py:188} INFO - [EXTRACT] Đọc file CSV...
+[2026-06-25T01:22:26.836+0000] {logging_mixin.py:188} INFO - [EXTRACT] ✅ Đọc xong — 9,994 dòng, 21 cột
+[2026-06-25T01:22:26.860+0000] {logging_mixin.py:188} INFO - 
+📋 Bắt đầu Data Quality Checks...
+[2026-06-25T01:22:26.862+0000] {logging_mixin.py:188} INFO - -------------------------------------------------------
+[2026-06-25T01:22:26.865+0000] {logging_mixin.py:188} INFO -   ✅ [PASS] null_check_order_id: Cột 'order_id' không được chứa NULL (0 lỗi)
+[2026-06-25T01:22:26.867+0000] {logging_mixin.py:188} INFO -   ✅ [PASS] null_check_customer_id: Cột 'customer_id' không được chứa NULL (0 lỗi)
+[2026-06-25T01:22:26.868+0000] {logging_mixin.py:188} INFO -   ✅ [PASS] null_check_product_id: Cột 'product_id' không được chứa NULL (0 lỗi)
+[2026-06-25T01:22:26.869+0000] {logging_mixin.py:188} INFO -   ❌ [FAIL] null_check_order_date: Cột 'order_date' không được chứa NULL (5952 lỗi)
+[2026-06-25T01:22:26.871+0000] {logging_mixin.py:188} INFO -   ✅ [PASS] sales_non_negative: Sales không được âm (0 lỗi)
+[2026-06-25T01:22:26.872+0000] {logging_mixin.py:188} INFO -   ✅ [PASS] quantity_positive: Quantity phải lớn hơn 0 (0 lỗi)
+[2026-06-25T01:22:26.873+0000] {logging_mixin.py:188} INFO -   ✅ [PASS] discount_range: Discount phải trong khoảng 0.0 – 1.0 (0 lỗi)
+[2026-06-25T01:22:27.343+0000] {logging_mixin.py:188} INFO -   ❌ [FAIL] order_date_not_future: Order date không được là ngày trong tương lai (5952 lỗi)
+[2026-06-25T01:22:27.351+0000] {logging_mixin.py:188} INFO -   ❌ [FAIL] ship_after_order: Ship date phải >= Order date (1159 lỗi)
+[2026-06-25T01:22:27.355+0000] {logging_mixin.py:188} INFO -   ❌ [FAIL] no_duplicate_order_product: Không được trùng cặp (order_id, product_id) (8 lỗi)
+[2026-06-25T01:22:27.357+0000] {logging_mixin.py:188} INFO -   ✅ [PASS] segment_valid_values: Segment phải là một trong: {'Home Office', 'Consumer', 'Corporate'} (0 lỗi)
+[2026-06-25T01:22:27.358+0000] {logging_mixin.py:188} INFO -   ✅ [PASS] discount_extreme_warning: Discount > 80% — kiểm tra lại dữ liệu (0 lỗi)
+[2026-06-25T01:22:27.358+0000] {logging_mixin.py:188} INFO - -------------------------------------------------------
+[2026-06-25T01:22:27.359+0000] {logging_mixin.py:188} INFO -   Kết quả: 8 PASS | 4 FAIL
+[2026-06-25T01:22:27.379+0000] {logging_mixin.py:188} INFO -   💾 Đã lưu kết quả vào bảng data_quality_log
+[2026-06-25T01:22:27.380+0000] {logging_mixin.py:188} INFO - 
+⚠️  4 check(s) FAIL — xem bảng data_quality_log trong DB
+[2026-06-25T01:22:27.380+0000] {logging_mixin.py:188} INFO - ⚠️ 4 data quality check(s) failed — tiếp tục ETL
+[2026-06-25T01:22:27.382+0000] {python.py:237} INFO - Done. Returned value was: Quality check: 8 PASS, 4 FAIL
+[2026-06-25T01:22:27.383+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2026-06-25T01:22:27.423+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=crm_etl_pipeline, task_id=data_quality_check, run_id=manual__2026-06-25T01:22:17.042739+00:00, execution_date=20260625T012217, start_date=20260625T012226, end_date=20260625T012227
+[2026-06-25T01:22:27.473+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2026-06-25T01:22:27.498+0000] {taskinstance.py:3498} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2026-06-25T01:22:27.500+0000] {local_task_job_runner.py:222} INFO - ::endgroup::
