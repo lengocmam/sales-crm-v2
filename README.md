@@ -70,6 +70,8 @@ sales-crm-analytics/
     └── CONNECTION_GUIDE.md       # Kết nối Power BI + DAX measures
 ```
 
+![alt text](image-4.png)
+
 ---
 
 ## ⭐ Tính năng nổi bật
